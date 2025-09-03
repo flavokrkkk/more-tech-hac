@@ -2,6 +2,7 @@ from yandex_neural_api.client import YandexNeuralAPIClient
 from get_token import get_iam_token
 import os
 from dotenv import load_dotenv
+from speech import speak, listen
 
 load_dotenv()
 
@@ -66,3 +67,36 @@ def generate_interview_summary(dialogue, vacancy_text: str) -> str:
 """
 
     return client.generate_text(prompt=prompt)
+
+
+def run_interview(vacancy_text):
+    dialogue = []
+
+    # Старт
+    speak("Привет! Я задам тебе несколько вопросов на основе вакансии.")
+    question = get_first_question(vacancy_text)
+
+    for _ in range(5):  # до 5 вопросов
+        speak(question)
+        answer = listen()
+
+        if not answer:
+            speak("Я не расслышал ответ. Повтори, пожалуйста.")
+            continue
+
+        dialogue.append((question, answer))
+        question = get_next_question(question, answer, vacancy_text)
+
+    # Завершение
+    speak("Спасибо за интервью! Сейчас сформирую краткое резюме.")
+    summary = generate_interview_summary(dialogue, vacancy_text)
+    print("\nИтог интервью:\n")
+    print(summary)
+    speak("Резюме интервью готово. Спасибо!")
+
+
+if __name__ == "__main__":
+    vacancy_text = """
+Ищем junior data analyst со знанием SQL и Python, опытом работы с дашбордами и умением визуализировать данные. Важно — умение ясно коммуницировать результаты анализа и самостоятельно ставить гипотезы.
+"""
+    run_interview(vacancy_text)

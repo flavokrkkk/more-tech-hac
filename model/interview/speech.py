@@ -4,18 +4,25 @@ import wave
 import requests
 import subprocess
 import sounddevice as sd
-from scipy.io.wavfile import write
 import pyaudio
 from get_token import get_iam_token
 from dotenv import load_dotenv
-import soundfile as sf
+import vosk
+import queue
+import json
 
 load_dotenv()
 
 FOLDER_ID = os.getenv("YANDEX_FOLDER_ID")
 IAM_TOKEN = get_iam_token()
 
-FFMPEG_PATH = os.path.join(os.path.dirname(__file__), "ffmpeg", "bin", "ffmpeg.exe")
+FFMPEG_PATH = os.path.join(os.path.dirname(__file__), "interview", "ffmpeg", "bin", "ffmpeg.exe")
+VOSK_MODEL_PATH = os.path.join(os.path.dirname(__file__), "interview", "vosk-model-small-ru-0.22")
+
+# загрузка модели
+if not os.path.exists(VOSK_MODEL_PATH):
+    raise FileNotFoundError(f"Vosk model not found in path: {VOSK_MODEL_PATH}")
+model = vosk.Model(VOSK_MODEL_PATH)
 
 
 # TTS
@@ -67,49 +74,28 @@ def speak(text: str):
 
 
 # STT
-def listen(duration: int = 3) -> str:
-
+def listen(duration: int = 4) -> str:
     print("Говорите... (идёт запись)")
-    fs = 16000
-    wav_raw = "speech_input_raw.wav"
-    wav_final = "speech_input.wav"
+
+    samplerate = 16000
+    q = queue.Queue()
+
+    def callback(indata, frames, time, status):
+        q.put(bytes(indata))
 
     try:
-        # Запись в raw wav
-        recording = sd.rec(int(duration * fs), samplerate=fs, channels=1, dtype='int16')
-        sd.wait()
-        sf.write(wav_raw, recording, fs, format='WAV', subtype='PCM_16')
-
-        # Преобразуем в строгий формат WAV через ffmpeg
-        subprocess.run([FFMPEG_PATH, "-y", "-i", wav_raw, "-ar", "16000", "-ac", "1", "-f", "wav", wav_final],
-                       stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
-
-        print(f"Файл переконвертирован: {wav_final}, размер: {os.path.getsize(wav_final)} байт")
-
-        stt_url = f"https://stt.api.cloud.yandex.net/speech/v1/stt:recognize?lang=ru-RU&folderId={FOLDER_ID}"
-        headers = {"Authorization": f"Bearer {IAM_TOKEN}"}
-
-        with open(wav_final, "rb") as f:
-            files = {"audio": ("speech_input.wav", f, "audio/x-wav")}
-            response = requests.post(stt_url, headers=headers, files=files)
-
-        if response.status_code == 200:
-            result = response.json()
-            text = result.get("result", "")
-            print(f"Вы сказали: {text}")
-            return text
-        else:
-            print("Ошибка распознавания:", response.text)
-            return ""
-
+        with sd.RawInputStream(samplerate=samplerate, blocksize=8000, dtype='int16',
+                               channels=1, callback=callback):
+            rec = vosk.KaldiRecognizer(model, samplerate)
+            for _ in range(int(samplerate / 8000 * duration)):
+                data = q.get()
+                if rec.AcceptWaveform(data):
+                    result = json.loads(rec.Result())
+                    print("Распознанный текст:", result.get("text", ""))
+                    return result.get("text", "")
+            result = json.loads(rec.FinalResult())
+            print("Распознанный текст:", result.get("text", ""))
+            return result.get("text", "")
     except Exception as e:
-        print(f"Ошибка записи или распознавания: {e}")
+        print("Ошибка распознавания:", e)
         return ""
-
-    finally:
-        for f in [wav_raw, wav_final]:
-            try:
-                if os.path.exists(f):
-                    os.remove(f)
-            except Exception as e:
-                print(f"Не удалось удалить файл {f}: {e}")
