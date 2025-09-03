@@ -3,3 +3,4 @@ venv/
 .env
 .env.private
 __pycache__/
+model/interview/authorized_key.json
