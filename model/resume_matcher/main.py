@@ -1,12 +1,12 @@
 #!/usr/bin/env python3
 """
-Запуск LLM-фильтратора вакансий через Ollama (только LLM-режим).
+Запуск LLM-фильтратора вакансий через YaGPT 5 Pro API.
 
 Использование (минимум):
-  python main.py --vacancies vacancies.json --resume resume.pdf --threshold 0.4
+  python main.py --vacancies vacancies.json --resume resume.pdf --threshold 0.4 --api-key YOUR_API_KEY --folder-id YOUR_FOLDER_ID
 
 Опции:
-  --model llama3.1:8b   Модель Ollama
+  --model yandexgpt      Модель YaGPT (yandexgpt, yandexgpt-lite)
   --output matched_ids.txt  Куда сохранить ID подходящих вакансий
   --json                 Вывести подробный JSON-отчет в консоль
 """
@@ -27,10 +27,12 @@ if current_dir not in sys.path:
     sys.path.insert(0, current_dir)
 
 try:
-    # Используем упрощенную LLM-реализацию
-    from llm_resume import LLMResumeMatcher
+    # Используем оптимизированную YaGPT-реализацию
+    from optimized_matcher import OptimizedYaGPTMatcher
+    from dotenv import load_dotenv
+    load_dotenv()  # Загружаем переменные окружения из .env файла
 except ImportError as e:
-    print("❌ Не найден llm_resume.py с LLM-логикой")
+    print("Не найден optimized_matcher.py с оптимизированной YaGPT-логикой или python-dotenv")
     print(f"Ошибка: {e}")
     sys.exit(1)
 
@@ -42,7 +44,7 @@ DEFAULT_OUTPUT_PATH = os.path.join(current_dir, "matched_ids.txt")
 
 def build_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(
-        description="LLM-фильтрация вакансий через Ollama (только LLM)",
+        description="LLM-фильтрация вакансий через YaGPT 5 Pro API",
     )
     parser.add_argument(
         "--vacancies",
@@ -65,8 +67,20 @@ def build_parser() -> argparse.ArgumentParser:
     parser.add_argument(
         "--model",
         type=str,
-        default="llama3.1:8b",
-        help="Модель Ollama (пример: llama3.1:8b, mistral:7b, phi3:mini)",
+        default="yandexgpt-lite",
+        help="Модель YaGPT (yandexgpt, yandexgpt-lite)",
+    )
+    parser.add_argument(
+        "--api-key",
+        type=str,
+        default=os.getenv("YANDEX_API_KEY"),
+        help="API ключ Yandex Cloud (или установите переменную YANDEX_API_KEY)",
+    )
+    parser.add_argument(
+        "--folder-id",
+        type=str,
+        default=os.getenv("YANDEX_FOLDER_ID"),
+        help="ID папки Yandex Cloud (или установите переменную YANDEX_FOLDER_ID)",
     )
     parser.add_argument(
         "--output",
@@ -78,6 +92,23 @@ def build_parser() -> argparse.ArgumentParser:
         "--json",
         action="store_true",
         help="Вывести подробный JSON-отчет",
+    )
+    parser.add_argument(
+        "--no-prefilter",
+        action="store_true",
+        help="Отключить предварительную фильтрацию (медленнее, но точнее)",
+    )
+    parser.add_argument(
+        "--batch-size",
+        type=int,
+        default=5,
+        help="Размер батча для обработки (по умолчанию: 5)",
+    )
+    parser.add_argument(
+        "--max-workers",
+        type=int,
+        default=2,
+        help="Количество потоков для параллельной обработки (по умолчанию: 2)",
     )
     return parser
 
@@ -92,30 +123,47 @@ def save_ids_to_txt(ids: List[str], path: str) -> None:
 def main() -> int:
     parser = build_parser()
     args = parser.parse_args()
+    
     # Валидация входов
     if not os.path.exists(args.vacancies):
-        print(f"❌ Файл с вакансиями не найден: {args.vacancies}")
+        print(f"Файл с вакансиями не найден: {args.vacancies}")
         return 1
     if not os.path.exists(args.resume):
-        print(f"❌ Файл резюме не найден: {args.resume}")
+        print(f"Файл резюме не найден: {args.resume}")
+        return 1
+    
+    # Проверяем наличие API ключа и folder_id
+    if not args.api_key:
+        print("Не указан API ключ. Используйте --api-key или установите переменную YANDEX_API_KEY")
+        return 1
+    if not args.folder_id:
+        print("Не указан folder_id. Используйте --folder-id или установите переменную YANDEX_FOLDER_ID")
         return 1
 
-    matcher = LLMResumeMatcher(model_name=args.model)
+    print(f"Инициализация оптимизированного YaGPT матчера (модель: {args.model})...")
+    matcher = OptimizedYaGPTMatcher(
+        api_key=args.api_key,
+        folder_id=args.folder_id,
+        model_name=args.model,
+        max_workers=args.max_workers
+    )
 
-    print("🧠 Запуск LLM-анализа (Ollama)...")
+    print("Запуск оптимизированного LLM-анализа (YaGPT 5 Pro)...")
     results = matcher.filter_vacancies(
         resume_path=args.resume,
         vacancies_path=args.vacancies,
         threshold=args.threshold,
+        use_prefilter=not args.no_prefilter,
+        batch_size=args.batch_size
     )
 
     # Сохраняем только ID по убыванию score
     ids_sorted = [v.id for (v, _s, _r) in results]
     try:
         save_ids_to_txt(ids_sorted, args.output)
-        print(f"✅ Сохранены ID подходящих вакансий (по убыванию) в: {args.output}")
+        print(f"Сохранены ID подходящих вакансий (по убыванию) в: {args.output}")
     except Exception as e:
-        print(f"⚠️ Не удалось сохранить ID: {e}")
+        print(f"Не удалось сохранить ID: {e}")
 
     if args.json:
         details = [
