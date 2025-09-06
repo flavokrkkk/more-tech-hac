@@ -1,0 +1,6 @@
+numpy
+scikit-learn
+requests
+markitdown[all]==0.1.2
+ollama
+

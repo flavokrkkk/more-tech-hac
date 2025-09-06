@@ -1,0 +1,1802 @@
+[
+    {
+        "id": "vac1",
+        "company": {
+            "id": "comp1",
+            "name": "ТехТренд",
+            "iconUrl": "https://example.com/icons/techtrend.png",
+            "industry": "Информационные технологии",
+            "siteUrl": "https://techtrend.ru"
+        },
+        "region": "Москва",
+        "post": "Ведущий разработчик ПО",
+        "salary": "200 000 - 300 000 ₽",
+        "tags": [
+            "Python",
+            "Django",
+            "PostgreSQL",
+            "Agile"
+        ],
+        "isFavorite": false,
+        "responsibilities": {
+            "title": "Основные обязанности",
+            "description": [
+                "Разработка и поддержка серверных приложений на Python.",
+                "Интеграция API с фронтенд-командами.",
+                "Оптимизация производительности баз данных."
+            ]
+        },
+        "requirements": {
+            "title": "Требования",
+            "description": [
+                "Опыт разработки от 5 лет.",
+                "Глубокое знание Python и Django.",
+                "Умение работать с PostgreSQL."
+            ]
+        }
+    },
+    {
+        "id": "vac2",
+        "company": {
+            "id": "comp2",
+            "name": "МедЛайн",
+            "iconUrl": "https://example.com/icons/medline.png",
+            "industry": "Здравоохранение",
+            "siteUrl": "https://medline.ru"
+        },
+        "region": "Санкт-Петербург",
+        "post": "Аналитик данных",
+        "salary": "150 000 - 220 000 ₽",
+        "tags": [
+            "Python",
+            "SQL",
+            "Машинное обучение",
+            "Медицина"
+        ],
+        "isFavorite": true,
+        "responsibilities": {
+            "title": "Основные обязанности",
+            "description": [
+                "Анализ медицинских данных для улучшения процессов.",
+                "Разработка моделей машинного обучения.",
+                "Взаимодействие с медицинским персоналом."
+            ]
+        },
+        "requirements": {
+            "title": "Требования",
+            "description": [
+                "Высшее образование в области данных или IT.",
+                "Опыт работы с Python и SQL от 3 лет.",
+                "Знание основ машинного обучения."
+            ]
+        }
+    },
+    {
+        "id": "vac3",
+        "company": {
+            "id": "comp3",
+            "name": "ЭкоЭнергия",
+            "iconUrl": "https://example.com/icons/ecoenergy.png",
+            "industry": "Энергетика",
+            "siteUrl": "https://ecoenergy.ru"
+        },
+        "region": "Казань",
+        "post": "Инженер встраиваемых систем",
+        "salary": "120 000 - 180 000 ₽",
+        "tags": [
+            "C++",
+            "IoT",
+            "Энергетика",
+            "Аппаратное ПО"
+        ],
+        "isFavorite": false,
+        "responsibilities": {
+            "title": "Основные обязанности",
+            "description": [
+                "Разработка прошивок для устройств IoT.",
+                "Оптимизация энергопотребления систем.",
+                "Тестирование и отладка оборудования."
+            ]
+        },
+        "requirements": {
+            "title": "Требования",
+            "description": [
+                "Опыт работы с встраиваемыми системами от 4 лет.",
+                "Знание C++ и RTOS.",
+                "Опыт работы с IoT-протоколами."
+            ]
+        }
+    },
+    {
+        "id": "vac4",
+        "company": {
+            "id": "comp4",
+            "name": "ФинТех Аналитика",
+            "iconUrl": "https://example.com/icons/fintech.png",
+            "industry": "Финансы",
+            "siteUrl": "https://fintechanalytica.ru"
+        },
+        "region": "Екатеринбург",
+        "post": "Квантовый аналитик",
+        "salary": "180 000 - 250 000 ₽",
+        "tags": [
+            "Python",
+            "Финансы",
+            "Статистика",
+            "Риск-менеджмент"
+        ],
+        "isFavorite": true,
+        "responsibilities": {
+            "title": "Основные обязанности",
+            "description": [
+                "Разработка моделей управления рисками.",
+                "Анализ рыночных данных с помощью статистики.",
+                "Автоматизация финансовых отчетов."
+            ]
+        },
+        "requirements": {
+            "title": "Требования",
+            "description": [
+                "Магистратура в финансах, математике или статистике.",
+                "Опыт работы в финансах от 3 лет.",
+                "Знание Python и R."
+            ]
+        }
+    },
+    {
+        "id": "vac5",
+        "company": {
+            "id": "comp5",
+            "name": "ОбрТех",
+            "iconUrl": "https://example.com/icons/obrtech.png",
+            "industry": "Образование",
+            "siteUrl": "https://obrtech.ru"
+        },
+        "region": "Удалённо",
+        "post": "Фронтенд-разработчик",
+        "salary": "100 000 - 150 000 ₽",
+        "tags": [
+            "React",
+            "TypeScript",
+            "UI/UX",
+            "EdTech"
+        ],
+        "isFavorite": false,
+        "responsibilities": {
+            "title": "Основные обязанности",
+            "description": [
+                "Разработка интерфейсов на React.",
+                "Сотрудничество с дизайнерами для улучшения UX.",
+                "Обеспечение кроссбраузерной совместимости."
+            ]
+        },
+        "requirements": {
+            "title": "Требования",
+            "description": [
+                "Опыт работы с React и TypeScript от 3 лет.",
+                "Понимание принципов UI/UX.",
+                "Опыт интеграции с REST API."
+            ]
+        }
+    },
+    {
+        "id": "vac6",
+        "company": {
+            "id": "comp6",
+            "name": "ОблакоПик",
+            "iconUrl": "https://example.com/icons/oblakopik.png",
+            "industry": "Облачные технологии",
+            "siteUrl": "https://oblakopik.ru"
+        },
+        "region": "Новосибирск",
+        "post": "DevOps-инженер",
+        "salary": "160 000 - 220 000 ₽",
+        "tags": [
+            "AWS",
+            "Docker",
+            "Kubernetes",
+            "CI/CD"
+        ],
+        "isFavorite": true,
+        "responsibilities": {
+            "title": "Основные обязанности",
+            "description": [
+                "Управление CI/CD-пайплайнами.",
+                "Развертывание приложений на Kubernetes.",
+                "Мониторинг производительности инфраструктуры."
+            ]
+        },
+        "requirements": {
+            "title": "Требования",
+            "description": [
+                "Опыт работы в DevOps от 4 лет.",
+                "Знание AWS и Docker.",
+                "Опыт работы с Kubernetes."
+            ]
+        }
+    },
+    {
+        "id": "vac7",
+        "company": {
+            "id": "comp7",
+            "name": "БиоЛаб",
+            "iconUrl": "https://example.com/icons/biolab.png",
+            "industry": "Биотехнологии",
+            "siteUrl": "https://biolab.ru"
+        },
+        "region": "Краснодар",
+        "post": "Специалист по биоинформатике",
+        "salary": "130 000 - 190 000 ₽",
+        "tags": [
+            "Python",
+            "R",
+            "Геномика",
+            "Анализ данных"
+        ],
+        "isFavorite": false,
+        "responsibilities": {
+            "title": "Основные обязанности",
+            "description": [
+                "Анализ геномных данных с использованием Python и R.",
+                "Разработка пайплайнов для обработки данных.",
+                "Сотрудничество с научными группами."
+            ]
+        },
+        "requirements": {
+            "title": "Требования",
+            "description": [
+                "Кандидат или доктор наук в биоинформатике.",
+                "Опыт работы с геномными данными от 3 лет.",
+                "Знание Python и R."
+            ]
+        }
+    },
+    {
+        "id": "vac8",
+        "company": {
+            "id": "comp8",
+            "name": "РитейлФлоу",
+            "iconUrl": "https://example.com/icons/retailflow.png",
+            "industry": "Ритейл",
+            "siteUrl": "https://retailflow.ru"
+        },
+        "region": "Ростов-на-Дону",
+        "post": "Аналитик цепочек поставок",
+        "salary": "110 000 - 160 000 ₽",
+        "tags": [
+            "Анализ данных",
+            "SQL",
+            "Логистика",
+            "Python"
+        ],
+        "isFavorite": false,
+        "responsibilities": {
+            "title": "Основные обязанности",
+            "description": [
+                "Оптимизация цепочек поставок.",
+                "Анализ логистических данных с помощью SQL.",
+                "Разработка моделей прогнозирования."
+            ]
+        },
+        "requirements": {
+            "title": "Требования",
+            "description": [
+                "Опыт работы в аналитике цепочек поставок от 3 лет.",
+                "Знание SQL и Python.",
+                "Навыки решения логистических задач."
+            ]
+        }
+    },
+    {
+        "id": "vac9",
+        "company": {
+            "id": "comp9",
+            "name": "ИгроСпарк",
+            "iconUrl": "https://example.com/icons/igrospark.png",
+            "industry": "Игровая индустрия",
+            "siteUrl": "https://igrospark.ru"
+        },
+        "region": "Москва",
+        "post": "Разработчик игр",
+        "salary": "140 000 - 200 000 ₽",
+        "tags": [
+            "Unity",
+            "C#",
+            "Игровой дизайн",
+            "3D"
+        ],
+        "isFavorite": true,
+        "responsibilities": {
+            "title": "Основные обязанности",
+            "description": [
+                "Разработка игровых механик на Unity и C#.",
+                "Сотрудничество с художниками по 3D-ассетам.",
+                "Оптимизация производительности игр."
+            ]
+        },
+        "requirements": {
+            "title": "Требования",
+            "description": [
+                "Опыт разработки игр от 4 лет.",
+                "Знание Unity и C#.",
+                "Опыт работы с 3D-инструментами."
+            ]
+        }
+    },
+    {
+        "id": "vac10",
+        "company": {
+            "id": "comp10",
+            "name": "КиберСеть",
+            "iconUrl": "https://example.com/icons/cybernet.png",
+            "industry": "Кибербезопасность",
+            "siteUrl": "https://cybernet.ru"
+        },
+        "region": "Екатеринбург",
+        "post": "Аналитик кибербезопасности",
+        "salary": "140 000 - 200 000 ₽",
+        "tags": [
+            "Кибербезопасность",
+            "Тестирование",
+            "SIEM",
+            "Python"
+        ],
+        "isFavorite": false,
+        "responsibilities": {
+            "title": "Основные обязанности",
+            "description": [
+                "Проведение тестирования уязвимостей сетей.",
+                "Мониторинг событий с помощью SIEM.",
+                "Автоматизация задач с Python."
+            ]
+        },
+        "requirements": {
+            "title": "Требования",
+            "description": [
+                "Опыт работы в кибербезопасности от 3 лет.",
+                "Знание SIEM и тестирования уязвимостей.",
+                "Навыки программирования на Python."
+            ]
+        }
+    },
+    {
+        "id": "vac11",
+        "company": {
+            "id": "comp11",
+            "name": "МаркетВайб",
+            "iconUrl": "https://example.com/icons/marketvibe.png",
+            "industry": "Маркетинг",
+            "siteUrl": "https://marketvibe.ru"
+        },
+        "region": "Краснодар",
+        "post": "Специалист по цифровому маркетингу",
+        "salary": "90 000 - 130 000 ₽",
+        "tags": [
+            "SEO",
+            "PPC",
+            "Аналитика",
+            "Соцсети"
+        ],
+        "isFavorite": false,
+        "responsibilities": {
+            "title": "Основные обязанности",
+            "description": [
+                "Управление SEO и PPC-кампаниями.",
+                "Анализ метрик эффективности кампаний.",
+                "Разработка стратегий для соцсетей."
+            ]
+        },
+        "requirements": {
+            "title": "Требования",
+            "description": [
+                "Опыт в цифровом маркетинге от 2 лет.",
+                "Знание Google Analytics и SEO-инструментов.",
+                "Хорошие коммуникативные навыки."
+            ]
+        }
+    },
+    {
+        "id": "vac12",
+        "company": {
+            "id": "comp12",
+            "name": "АвтоТех",
+            "iconUrl": "https://example.com/icons/autotech.png",
+            "industry": "Автомобилестроение",
+            "siteUrl": "https://autotech.ru"
+        },
+        "region": "Тольятти",
+        "post": "Инженер автомобильного ПО",
+        "salary": "130 000 - 190 000 ₽",
+        "tags": [
+            "C++",
+            "Встраиваемые системы",
+            "Автомобили",
+            "CAN"
+        ],
+        "isFavorite": true,
+        "responsibilities": {
+            "title": "Основные обязанности",
+            "description": [
+                "Разработка ПО для систем управления авто.",
+                "Работа с протоколами CAN.",
+                "Тестирование встраиваемых систем."
+            ]
+        },
+        "requirements": {
+            "title": "Требования",
+            "description": [
+                "Опыт работы с встраиваемыми системами от 4 лет.",
+                "Знание C++ и протоколов CAN.",
+                "Навыки тестирования и отладки."
+            ]
+        }
+    },
+    {
+        "id": "vac13",
+        "company": {
+            "id": "comp13",
+            "name": "СофтПрогресс",
+            "iconUrl": "https://example.com/icons/softprogress.png",
+            "industry": "Информационные технологии",
+            "siteUrl": "https://softprogress.ru"
+        },
+        "region": "Нижний Новгород",
+        "post": "Backend-разработчик",
+        "salary": "160 000 - 240 000 ₽",
+        "tags": [
+            "Node.js",
+            "TypeScript",
+            "MongoDB",
+            "REST API"
+        ],
+        "isFavorite": false,
+        "responsibilities": {
+            "title": "Основные обязанности",
+            "description": [
+                "Разработка серверных приложений на Node.js.",
+                "Проектирование REST API.",
+                "Оптимизация работы с MongoDB."
+            ]
+        },
+        "requirements": {
+            "title": "Требования",
+            "description": [
+                "Опыт работы с Node.js от 3 лет.",
+                "Знание TypeScript и MongoDB.",
+                "Опыт проектирования API."
+            ]
+        }
+    },
+    {
+        "id": "vac14",
+        "company": {
+            "id": "comp14",
+            "name": "ТехноМедиа",
+            "iconUrl": "https://example.com/icons/technomedia.png",
+            "industry": "Медиа",
+            "siteUrl": "https://technomedia.ru"
+        },
+        "region": "Москва",
+        "post": "Менеджер по контенту",
+        "salary": "80 000 - 120 000 ₽",
+        "tags": [
+            "Контент",
+            "SMM",
+            "Копирайтинг",
+            "Аналитика"
+        ],
+        "isFavorite": true,
+        "responsibilities": {
+            "title": "Основные обязанности",
+            "description": [
+                "Создание и редактирование контента для соцсетей.",
+                "Анализ эффективности публикаций.",
+                "Планирование контент-стратегии."
+            ]
+        },
+        "requirements": {
+            "title": "Требования",
+            "description": [
+                "Опыт работы в SMM от 2 лет.",
+                "Навыки копирайтинга.",
+                "Знание аналитических инструментов."
+            ]
+        }
+    },
+    {
+        "id": "vac15",
+        "company": {
+            "id": "comp15",
+            "name": "АгроТех",
+            "iconUrl": "https://example.com/icons/agrotech.png",
+            "industry": "Агропром",
+            "siteUrl": "https://agrotech.ru"
+        },
+        "region": "Краснодар",
+        "post": "Инженер по автоматизации",
+        "salary": "110 000 - 160 000 ₽",
+        "tags": [
+            "PLC",
+            "SCADA",
+            "Python",
+            "Автоматизация"
+        ],
+        "isFavorite": false,
+        "responsibilities": {
+            "title": "Основные обязанности",
+            "description": [
+                "Разработка систем автоматизации на PLC.",
+                "Настройка SCADA-систем.",
+                "Интеграция с Python-скриптами."
+            ]
+        },
+        "requirements": {
+            "title": "Требования",
+            "description": [
+                "Опыт работы с PLC и SCADA от 3 лет.",
+                "Знание Python.",
+                "Понимание процессов автоматизации."
+            ]
+        }
+    },
+    {
+        "id": "vac16",
+        "company": {
+            "id": "comp16",
+            "name": "СмартРитейл",
+            "iconUrl": "https://example.com/icons/smartritail.png",
+            "industry": "Ритейл",
+            "siteUrl": "https://smartritail.ru"
+        },
+        "region": "Самара",
+        "post": "Аналитик данных",
+        "salary": "120 000 - 180 000 ₽",
+        "tags": [
+            "SQL",
+            "Python",
+            "BI",
+            "Ритейл"
+        ],
+        "isFavorite": true,
+        "responsibilities": {
+            "title": "Основные обязанности",
+            "description": [
+                "Анализ продаж и товарооборота.",
+                "Создание отчетов в BI-инструментах.",
+                "Автоматизация аналитики с Python."
+            ]
+        },
+        "requirements": {
+            "title": "Требования",
+            "description": [
+                "Опыт работы с SQL и Python от 3 лет.",
+                "Знание BI-инструментов (Tableau, Power BI).",
+                "Понимание ритейл-процессов."
+            ]
+        }
+    },
+    {
+        "id": "vac17",
+        "company": {
+            "id": "comp17",
+            "name": "КиберТех",
+            "iconUrl": "https://example.com/icons/cybertech.png",
+            "industry": "Кибербезопасность",
+            "siteUrl": "https://cybertech.ru"
+        },
+        "region": "Москва",
+        "post": "Специалист по SOC",
+        "salary": "150 000 - 220 000 ₽",
+        "tags": [
+            "SOC",
+            "SIEM",
+            "Кибербезопасность",
+            "Splunk"
+        ],
+        "isFavorite": false,
+        "responsibilities": {
+            "title": "Основные обязанности",
+            "description": [
+                "Мониторинг инцидентов в SOC.",
+                "Настройка и поддержка SIEM-систем.",
+                "Анализ угроз безопасности."
+            ]
+        },
+        "requirements": {
+            "title": "Требования",
+            "description": [
+                "Опыт работы в SOC от 3 лет.",
+                "Знание SIEM (например, Splunk).",
+                "Понимание процессов кибербезопасности."
+            ]
+        }
+    },
+    {
+        "id": "vac18",
+        "company": {
+            "id": "comp18",
+            "name": "МобайлТех",
+            "iconUrl": "https://example.com/icons/mobiletech.png",
+            "industry": "Мобильная разработка",
+            "siteUrl": "https://mobiletech.ru"
+        },
+        "region": "Санкт-Петербург",
+        "post": "Android-разработчик",
+        "salary": "140 000 - 200 000 ₽",
+        "tags": [
+            "Kotlin",
+            "Android",
+            "MVVM",
+            "REST API"
+        ],
+        "isFavorite": true,
+        "responsibilities": {
+            "title": "Основные обязанности",
+            "description": [
+                "Разработка приложений на Kotlin.",
+                "Интеграция с REST API.",
+                "Оптимизация производительности приложений."
+            ]
+        },
+        "requirements": {
+            "title": "Требования",
+            "description": [
+                "Опыт разработки под Android от 3 лет.",
+                "Знание Kotlin и MVVM.",
+                "Опыт работы с REST API."
+            ]
+        }
+    },
+    {
+        "id": "vac19",
+        "company": {
+            "id": "comp19",
+            "name": "ЭнергоСистемы",
+            "iconUrl": "https://example.com/icons/energosystems.png",
+            "industry": "Энергетика",
+            "siteUrl": "https://energosystems.ru"
+        },
+        "region": "Челябинск",
+        "post": "Инженер по автоматизации",
+        "salary": "110 000 - 160 000 ₽",
+        "tags": [
+            "PLC",
+            "SCADA",
+            "Энергетика",
+            "Python"
+        ],
+        "isFavorite": false,
+        "responsibilities": {
+            "title": "Основные обязанности",
+            "description": [
+                "Программирование PLC для систем энергетики.",
+                "Настройка SCADA-систем.",
+                "Автоматизация процессов с Python."
+            ]
+        },
+        "requirements": {
+            "title": "Требования",
+            "description": [
+                "Опыт работы с PLC и SCADA от 3 лет.",
+                "Знание Python.",
+                "Понимание энергетических систем."
+            ]
+        }
+    },
+    {
+        "id": "vac20",
+        "company": {
+            "id": "comp20",
+            "name": "МедиаСвет",
+            "iconUrl": "https://example.com/icons/mediasvet.png",
+            "industry": "Медиа",
+            "siteUrl": "https://mediasvet.ru"
+        },
+        "region": "Удалённо",
+        "post": "SMM-менеджер",
+        "salary": "80 000 - 120 000 ₽",
+        "tags": [
+            "SMM",
+            "Контент",
+            "Соцсети",
+            "Аналитика"
+        ],
+        "isFavorite": true,
+        "responsibilities": {
+            "title": "Основные обязанности",
+            "description": [
+                "Создание контента для соцсетей.",
+                "Анализ эффективности публикаций.",
+                "Планирование SMM-стратегии."
+            ]
+        },
+        "requirements": {
+            "title": "Требования",
+            "description": [
+                "Опыт работы в SMM от 2 лет.",
+                "Знание инструментов аналитики (Яндекс.Метрика).",
+                "Креативность и навыки копирайтинга."
+            ]
+        }
+    },
+    {
+        "id": "vac21",
+        "company": {
+            "id": "comp21",
+            "name": "ФинСофт",
+            "iconUrl": "https://example.com/icons/finsoft.png",
+            "industry": "Финансы",
+            "siteUrl": "https://finsoft.ru"
+        },
+        "region": "Москва",
+        "post": "Разработчик FinTech",
+        "salary": "180 000 - 260 000 ₽",
+        "tags": [
+            "Java",
+            "Spring",
+            "FinTech",
+            "SQL"
+        ],
+        "isFavorite": false,
+        "responsibilities": {
+            "title": "Основные обязанности",
+            "description": [
+                "Разработка финансовых приложений на Java.",
+                "Интеграция с банковскими системами.",
+                "Оптимизация SQL-запросов."
+            ]
+        },
+        "requirements": {
+            "title": "Требования",
+            "description": [
+                "Опыт работы с Java и Spring от 4 лет.",
+                "Знание SQL и баз данных.",
+                "Понимание финансовых процессов."
+            ]
+        }
+    },
+    {
+        "id": "vac22",
+        "company": {
+            "id": "comp22",
+            "name": "ТехноИскры",
+            "iconUrl": "https://example.com/icons/technoiskry.png",
+            "industry": "Информационные технологии",
+            "siteUrl": "https://technoiskry.ru"
+        },
+        "region": "Новосибирск",
+        "post": "Full-Stack разработчик",
+        "salary": "160 000 - 230 000 ₽",
+        "tags": [
+            "React",
+            "Node.js",
+            "TypeScript",
+            "MongoDB"
+        ],
+        "isFavorite": true,
+        "responsibilities": {
+            "title": "Основные обязанности",
+            "description": [
+                "Разработка фронтенда и бэкенда приложений.",
+                "Интеграция с MongoDB.",
+                "Оптимизация производительности."
+            ]
+        },
+        "requirements": {
+            "title": "Требования",
+            "description": [
+                "Опыт работы с React и Node.js от 3 лет.",
+                "Знание TypeScript.",
+                "Опыт работы с MongoDB."
+            ]
+        }
+    },
+    {
+        "id": "vac23",
+        "company": {
+            "id": "comp23",
+            "name": "ЗдравТех",
+            "iconUrl": "https://example.com/icons/zdravtech.png",
+            "industry": "Здравоохранение",
+            "siteUrl": "https://zdravtech.ru"
+        },
+        "region": "Екатеринбург",
+        "post": "Менеджер проектов",
+        "salary": "120 000 - 180 000 ₽",
+        "tags": [
+            "PMP",
+            "Agile",
+            "Здравоохранение",
+            "Scrum"
+        ],
+        "isFavorite": false,
+        "responsibilities": {
+            "title": "Основные обязанности",
+            "description": [
+                "Управление проектами в сфере здравоохранения.",
+                "Координация Agile-команд.",
+                "Контроль сроков и бюджетов."
+            ]
+        },
+        "requirements": {
+            "title": "Требования",
+            "description": [
+                "Опыт управления проектами от 3 лет.",
+                "Знание Agile и Scrum.",
+                "Понимание процессов здравоохранения."
+            ]
+        }
+    },
+    {
+        "id": "vac24",
+        "company": {
+            "id": "comp24",
+            "name": "ЛогистикПартнер",
+            "iconUrl": "https://example.com/icons/logisticpartner.png",
+            "industry": "Логистика",
+            "siteUrl": "https://logisticpartner.ru"
+        },
+        "region": "Санкт-Петербург",
+        "post": "Аналитик логистики",
+        "salary": "110 000 - 160 000 ₽",
+        "tags": [
+            "SQL",
+            "Python",
+            "Логистика",
+            "Аналитика"
+        ],
+        "isFavorite": true,
+        "responsibilities": {
+            "title": "Основные обязанности",
+            "description": [
+                "Анализ логистических процессов.",
+                "Разработка моделей оптимизации.",
+                "Автоматизация отчетов с Python."
+            ]
+        },
+        "requirements": {
+            "title": "Требования",
+            "description": [
+                "Опыт работы в логистике от 3 лет.",
+                "Знание SQL и Python.",
+                "Навыки аналитического мышления."
+            ]
+        }
+    },
+    {
+        "id": "vac25",
+        "company": {
+            "id": "comp25",
+            "name": "ИгроМир",
+            "iconUrl": "https://example.com/icons/igromir.png",
+            "industry": "Игровая индустрия",
+            "siteUrl": "https://igromir.ru"
+        },
+        "region": "Москва",
+        "post": "Технический художник",
+        "salary": "130 000 - 190 000 ₽",
+        "tags": [
+            "Unity",
+            "3D",
+            "Шейдеры",
+            "Игровой дизайн"
+        ],
+        "isFavorite": false,
+        "responsibilities": {
+            "title": "Основные обязанности",
+            "description": [
+                "Создание шейдеров и визуальных эффектов.",
+                "Оптизация 3D-ассетов для Unity.",
+                "Сотрудничество с разработчиками."
+            ]
+        },
+        "requirements": {
+            "title": "Требования",
+            "description": [
+                "Опыт работы техническим художником от 3 лет.",
+                "Знание Unity и шейдеров.",
+                "Понимание 3D-пайплайнов."
+            ]
+        }
+    },
+    {
+        "id": "vac26",
+        "company": {
+            "id": "comp26",
+            "name": "КиберЗащита",
+            "iconUrl": "https://example.com/icons/cyberzashita.png",
+            "industry": "Кибербезопасность",
+            "siteUrl": "https://cyberzashita.ru"
+        },
+        "region": "Казань",
+        "post": "Инженер по тестированию",
+        "salary": "120 000 - 180 000 ₽",
+        "tags": [
+            "Тестирование",
+            "Кибербезопасность",
+            "Python",
+            "Автоматизация"
+        ],
+        "isFavorite": true,
+        "responsibilities": {
+            "title": "Основные обязанности",
+            "description": [
+                "Проведение тестирования безопасности.",
+                "Автоматизация тестов с Python.",
+                "Анализ результатов тестирования."
+            ]
+        },
+        "requirements": {
+            "title": "Требования",
+            "description": [
+                "Опыт тестирования от 3 лет.",
+                "Знание Python.",
+                "Понимание процессов кибербезопасности."
+            ]
+        }
+    },
+    {
+        "id": "vac27",
+        "company": {
+            "id": "comp27",
+            "name": "МобайлСофт",
+            "iconUrl": "https://example.com/icons/mobilesoft.png",
+            "industry": "Мобильная разработка",
+            "siteUrl": "https://mobilesoft.ru"
+        },
+        "region": "Удалённо",
+        "post": "iOS-разработчик",
+        "salary": "150 000 - 220 000 ₽",
+        "tags": [
+            "Swift",
+            "iOS",
+            "MVVM",
+            "REST API"
+        ],
+        "isFavorite": false,
+        "responsibilities": {
+            "title": "Основные обязанности",
+            "description": [
+                "Разработка приложений на Swift.",
+                "Интеграция с REST API.",
+                "Оптимизация приложений для iOS."
+            ]
+        },
+        "requirements": {
+            "title": "Требования",
+            "description": [
+                "Опыт разработки под iOS от 3 лет.",
+                "Знание Swift и MVVM.",
+                "Опыт работы с REST API."
+            ]
+        }
+    },
+    {
+        "id": "vac28",
+        "company": {
+            "id": "comp28",
+            "name": "ТехноЛид",
+            "iconUrl": "https://example.com/icons/technolid.png",
+            "industry": "Информационные технологии",
+            "siteUrl": "https://technolid.ru"
+        },
+        "region": "Санкт-Петербург",
+        "post": "Архитектор ПО",
+        "salary": "200 000 - 300 000 ₽",
+        "tags": [
+            "Микросервисы",
+            "Java",
+            "AWS",
+            "Архитектура"
+        ],
+        "isFavorite": true,
+        "responsibilities": {
+            "title": "Основные обязанности",
+            "description": [
+                "Проектирование микросервисной архитектуры.",
+                "Интеграция с AWS-сервисами.",
+                "Координация разработки."
+            ]
+        },
+        "requirements": {
+            "title": "Требования",
+            "description": [
+                "Опыт работы архитектором от 5 лет.",
+                "Знание Java и AWS.",
+                "Понимание микросервисов."
+            ]
+        }
+    },
+    {
+        "id": "vac29",
+        "company": {
+            "id": "comp29",
+            "name": "МедиаПульс",
+            "iconUrl": "https://example.com/icons/mediapulse.png",
+            "industry": "Медиа",
+            "siteUrl": "https://mediapulse.ru"
+        },
+        "region": "Москва",
+        "post": "Видеоредактор",
+        "salary": "90 000 - 130 000 ₽",
+        "tags": [
+            "Видео",
+            "Adobe Premiere",
+            "Медиа",
+            "Монтаж"
+        ],
+        "isFavorite": false,
+        "responsibilities": {
+            "title": "Основные обязанности",
+            "description": [
+                "Монтаж видеоконтента для медиа.",
+                "Работа с Adobe Premiere и After Effects.",
+                "Сотрудничество с креативной командой."
+            ]
+        },
+        "requirements": {
+            "title": "Требования",
+            "description": [
+                "Опыт работы в видеомонтаже от 2 лет.",
+                "Знание Adobe Premiere и After Effects.",
+                "Креативное мышление."
+            ]
+        }
+    },
+    {
+        "id": "vac30",
+        "company": {
+            "id": "comp30",
+            "name": "АгроСофт",
+            "iconUrl": "https://example.com/icons/agrosoft.png",
+            "industry": "Агропром",
+            "siteUrl": "https://agrosoft.ru"
+        },
+        "region": "Ставрополь",
+        "post": "Аналитик данных",
+        "salary": "100 000 - 150 000 ₽",
+        "tags": [
+            "Python",
+            "SQL",
+            "Агропром",
+            "BI"
+        ],
+        "isFavorite": true,
+        "responsibilities": {
+            "title": "Основные обязанности",
+            "description": [
+                "Анализ данных сельхозпроизводства.",
+                "Создание отчетов в BI-инструментах.",
+                "Автоматизация аналитики с Python."
+            ]
+        },
+        "requirements": {
+            "title": "Требования",
+            "description": [
+                "Опыт работы с Python и SQL от 3 лет.",
+                "Знание BI-инструментов (Power BI).",
+                "Понимание агропрома."
+            ]
+        }
+    },
+    {
+        "id": "vac31",
+        "company": {
+            "id": "comp31",
+            "name": "ФинПрогресс",
+            "iconUrl": "https://example.com/icons/finprogress.png",
+            "industry": "Финансы",
+            "siteUrl": "https://finprogress.ru"
+        },
+        "region": "Москва",
+        "post": "Аналитик рисков",
+        "salary": "160 000 - 230 000 ₽",
+        "tags": [
+            "Python",
+            "Риск-менеджмент",
+            "SQL",
+            "Финансы"
+        ],
+        "isFavorite": false,
+        "responsibilities": {
+            "title": "Основные обязанности",
+            "description": [
+                "Анализ финансовых рисков.",
+                "Разработка моделей оценки рисков.",
+                "Работа с SQL для отчетности."
+            ]
+        },
+        "requirements": {
+            "title": "Требования",
+            "description": [
+                "Опыт работы в риск-менеджменте от 3 лет.",
+                "Знание Python и SQL.",
+                "Понимание финансовых процессов."
+            ]
+        }
+    },
+    {
+        "id": "vac32",
+        "company": {
+            "id": "comp32",
+            "name": "ТехноИгра",
+            "iconUrl": "https://example.com/icons/technoigra.png",
+            "industry": "Игровая индустрия",
+            "siteUrl": "https://technoigra.ru"
+        },
+        "region": "Санкт-Петербург",
+        "post": "Разработчик Unity",
+        "salary": "140 000 - 200 000 ₽",
+        "tags": [
+            "Unity",
+            "C#",
+            "Игровой дизайн",
+            "VR"
+        ],
+        "isFavorite": true,
+        "responsibilities": {
+            "title": "Основные обязанности",
+            "description": [
+                "Разработка игр на Unity.",
+                "Работа с VR-технологиями.",
+                "Оптимизация игровых механик."
+            ]
+        },
+        "requirements": {
+            "title": "Требования",
+            "description": [
+                "Опыт разработки на Unity от 3 лет.",
+                "Знание C#.",
+                "Опыт работы с VR."
+            ]
+        }
+    },
+    {
+        "id": "vac33",
+        "company": {
+            "id": "comp33",
+            "name": "КиберМир",
+            "iconUrl": "https://example.com/icons/cybermir.png",
+            "industry": "Кибербезопасность",
+            "siteUrl": "https://cybermir.ru"
+        },
+        "region": "Екатеринбург",
+        "post": "Специалист по пентесту",
+        "salary": "150 000 - 220 000 ₽",
+        "tags": [
+            "Пентест",
+            "Кибербезопасность",
+            "Python",
+            "Burp Suite"
+        ],
+        "isFavorite": false,
+        "responsibilities": {
+            "title": "Основные обязанности",
+            "description": [
+                "Проведение тестирования уязвимостей.",
+                "Анализ безопасности приложений.",
+                "Автоматизация тестов с Python."
+            ]
+        },
+        "requirements": {
+            "title": "Требования",
+            "description": [
+                "Опыт пентеста от 3 лет.",
+                "Знание Python и Burp Suite.",
+                "Понимание сетевой безопасности."
+            ]
+        }
+    },
+    {
+        "id": "vac34",
+        "company": {
+            "id": "comp34",
+            "name": "МобайлПрогресс",
+            "iconUrl": "https://example.com/icons/mobileprogress.png",
+            "industry": "Мобильная разработка",
+            "siteUrl": "https://mobileprogress.ru"
+        },
+        "region": "Москва",
+        "post": "Flutter-разработчик",
+        "salary": "140 000 - 200 000 ₽",
+        "tags": [
+            "Flutter",
+            "Dart",
+            "Мобильная разработка",
+            "REST API"
+        ],
+        "isFavorite": true,
+        "responsibilities": {
+            "title": "Основные обязанности",
+            "description": [
+                "Разработка кроссплатформенных приложений на Flutter.",
+                "Интеграция с REST API.",
+                "Оптимизация приложений."
+            ]
+        },
+        "requirements": {
+            "title": "Требования",
+            "description": [
+                "Опыт работы с Flutter от 3 лет.",
+                "Знание Dart.",
+                "Опыт интеграции с API."
+            ]
+        }
+    },
+    {
+        "id": "vac35",
+        "company": {
+            "id": "comp35",
+            "name": "ЭнергоТех",
+            "iconUrl": "https://example.com/icons/energotech.png",
+            "industry": "Энергетика",
+            "siteUrl": "https://energotech.ru"
+        },
+        "region": "Омск",
+        "post": "Инженер по SCADA",
+        "salary": "110 000 - 160 000 ₽",
+        "tags": [
+            "SCADA",
+            "PLC",
+            "Энергетика",
+            "Автоматизация"
+        ],
+        "isFavorite": false,
+        "responsibilities": {
+            "title": "Основные обязанности",
+            "description": [
+                "Настройка и поддержка SCADA-систем.",
+                "Программирование PLC.",
+                "Автоматизация процессов."
+            ]
+        },
+        "requirements": {
+            "title": "Требования",
+            "description": [
+                "Опыт работы с SCADA и PLC от 3 лет.",
+                "Знание протоколов автоматизации.",
+                "Понимание энергетических систем."
+            ]
+        }
+    },
+    {
+        "id": "vac36",
+        "company": {
+            "id": "comp36",
+            "name": "МедиаТренд",
+            "iconUrl": "https://example.com/icons/mediatrend.png",
+            "industry": "Медиа",
+            "siteUrl": "https://mediatrend.ru"
+        },
+        "region": "Москва",
+        "post": "Продюсер контента",
+        "salary": "100 000 - 150 000 ₽",
+        "tags": [
+            "Контент",
+            "Медиа",
+            "Копирайтинг",
+            "SMM"
+        ],
+        "isFavorite": true,
+        "responsibilities": {
+            "title": "Основные обязанности",
+            "description": [
+                "Создание и координация контента.",
+                "Работа с командами SMM.",
+                "Планирование медиа-кампаний."
+            ]
+        },
+        "requirements": {
+            "title": "Требования",
+            "description": [
+                "Опыт работы в медиа от 3 лет.",
+                "Навыки копирайтинга.",
+                "Знание SMM-инструментов."
+            ]
+        }
+    },
+    {
+        "id": "vac37",
+        "company": {
+            "id": "comp37",
+            "name": "ТехноСофт",
+            "iconUrl": "https://example.com/icons/technosoft.png",
+            "industry": "Информационные технологии",
+            "siteUrl": "https://technosoft.ru"
+        },
+        "region": "Санкт-Петербург",
+        "post": "Тестировщик ПО",
+        "salary": "100 000 - 150 000 ₽",
+        "tags": [
+            "Тестирование",
+            "Автоматизация",
+            "Python",
+            "Selenium"
+        ],
+        "isFavorite": false,
+        "responsibilities": {
+            "title": "Основные обязанности",
+            "description": [
+                "Проведение функционального тестирования.",
+                "Автоматизация тестов с Selenium.",
+                "Написание тестов на Python."
+            ]
+        },
+        "requirements": {
+            "title": "Требования",
+            "description": [
+                "Опыт тестирования от 2 лет.",
+                "Знание Python и Selenium.",
+                "Понимание процессов QA."
+            ]
+        }
+    },
+    {
+        "id": "vac38",
+        "company": {
+            "id": "comp38",
+            "name": "ФинТехСофт",
+            "iconUrl": "https://example.com/icons/fintechsoft.png",
+            "industry": "Финансы",
+            "siteUrl": "https://fintechsoft.ru"
+        },
+        "region": "Москва",
+        "post": "Бэкенд-разработчик",
+        "salary": "180 000 - 260 000 ₽",
+        "tags": [
+            "Python",
+            "Django",
+            "FinTech",
+            "SQL"
+        ],
+        "isFavorite": true,
+        "responsibilities": {
+            "title": "Основные обязанности",
+            "description": [
+                "Разработка серверной части FinTech-приложений.",
+                "Интеграция с банковскими API.",
+                "Оптимизация SQL-запросов."
+            ]
+        },
+        "requirements": {
+            "title": "Требования",
+            "description": [
+                "Опыт работы с Python и Django от 4 лет.",
+                "Знание SQL.",
+                "Понимание FinTech-продуктов."
+            ]
+        }
+    },
+    {
+        "id": "vac39",
+        "company": {
+            "id": "comp39",
+            "name": "ИгроТех",
+            "iconUrl": "https://example.com/icons/igrotech.png",
+            "industry": "Игровая индустрия",
+            "siteUrl": "https://igrotech.ru"
+        },
+        "region": "Екатеринбург",
+        "post": "Геймдизайнер",
+        "salary": "120 000 - 180 000 ₽",
+        "tags": [
+            "Игровой дизайн",
+            "Unity",
+            "Сценарии",
+            "VR"
+        ],
+        "isFavorite": false,
+        "responsibilities": {
+            "title": "Основные обязанности",
+            "description": [
+                "Разработка игровых механик и сценариев.",
+                "Работа с Unity для прототипов.",
+                "Тестирование игровых концепций."
+            ]
+        },
+        "requirements": {
+            "title": "Требования",
+            "description": [
+                "Опыт геймдизайна от 3 лет.",
+                "Знание Unity.",
+                "Креативное мышление."
+            ]
+        }
+    },
+    {
+        "id": "vac40",
+        "company": {
+            "id": "comp40",
+            "name": "КиберСофт",
+            "iconUrl": "https://example.com/icons/cybersoft.png",
+            "industry": "Кибербезопасность",
+            "siteUrl": "https://cybersoft.ru"
+        },
+        "region": "Новосибирск",
+        "post": "Аналитик угроз",
+        "salary": "140 000 - 200 000 ₽",
+        "tags": [
+            "Кибербезопасность",
+            "Аналитика",
+            "SIEM",
+            "Python"
+        ],
+        "isFavorite": true,
+        "responsibilities": {
+            "title": "Основные обязанности",
+            "description": [
+                "Анализ киберугроз.",
+                "Работа с SIEM-системами.",
+                "Автоматизация анализа с Python."
+            ]
+        },
+        "requirements": {
+            "title": "Требования",
+            "description": [
+                "Опыт работы в кибербезопасности от 3 лет.",
+                "Знание SIEM и Python.",
+                "Понимание процессов анализа угроз."
+            ]
+        }
+    },
+    {
+        "id": "vac41",
+        "company": {
+            "id": "comp41",
+            "name": "МобайлИскры",
+            "iconUrl": "https://example.com/icons/mobileiskry.png",
+            "industry": "Мобильная разработка",
+            "siteUrl": "https://mobileiskry.ru"
+        },
+        "region": "Москва",
+        "post": "React Native разработчик",
+        "salary": "150 000 - 220 000 ₽",
+        "tags": [
+            "React Native",
+            "JavaScript",
+            "Мобильная разработка",
+            "REST API"
+        ],
+        "isFavorite": false,
+        "responsibilities": {
+            "title": "Основные обязанности",
+            "description": [
+                "Разработка кроссплатформенных приложений на React Native.",
+                "Интеграция с REST API.",
+                "Оптимизация производительности."
+            ]
+        },
+        "requirements": {
+            "title": "Требования",
+            "description": [
+                "Опыт работы с React Native от 3 лет.",
+                "Знание JavaScript.",
+                "Опыт интеграции с API."
+            ]
+        }
+    },
+    {
+        "id": "vac42",
+        "company": {
+            "id": "comp42",
+            "name": "ЭнергоПрогресс",
+            "iconUrl": "https://example.com/icons/energoprogress.png",
+            "industry": "Энергетика",
+            "siteUrl": "https://energoprogress.ru"
+        },
+        "region": "Ростов-на-Дону",
+        "post": "Инженер по автоматизации",
+        "salary": "110 000 - 160 000 ₽",
+        "tags": [
+            "PLC",
+            "SCADA",
+            "Энергетика",
+            "Python"
+        ],
+        "isFavorite": true,
+        "responsibilities": {
+            "title": "Основные обязанности",
+            "description": [
+                "Программирование PLC для энергетических систем.",
+                "Настройка SCADA-систем.",
+                "Автоматизация процессов."
+            ]
+        },
+        "requirements": {
+            "title": "Требования",
+            "description": [
+                "Опыт работы с PLC и SCADA от 3 лет.",
+                "Знание Python.",
+                "Понимание энергетических процессов."
+            ]
+        }
+    },
+    {
+        "id": "vac43",
+        "company": {
+            "id": "comp43",
+            "name": "МедиаСофт",
+            "iconUrl": "https://example.com/icons/mediasoft.png",
+            "industry": "Медиа",
+            "siteUrl": "https://mediasoft.ru"
+        },
+        "region": "Удалённо",
+        "post": "Копирайтер",
+        "salary": "80 000 - 120 000 ₽",
+        "tags": [
+            "Копирайтинг",
+            "SMM",
+            "Контент",
+            "Медиа"
+        ],
+        "isFavorite": false,
+        "responsibilities": {
+            "title": "Основные обязанности",
+            "description": [
+                "Написание текстов для медиа и соцсетей.",
+                "Создание контента для рекламных кампаний.",
+                "Сотрудничество с SMM-командой."
+            ]
+        },
+        "requirements": {
+            "title": "Требования",
+            "description": [
+                "Опыт работы копирайтером от 2 лет.",
+                "Навыки написания текстов.",
+                "Понимание SMM-стратегий."
+            ]
+        }
+    },
+    {
+        "id": "vac44",
+        "company": {
+            "id": "comp44",
+            "name": "ТехноМир",
+            "iconUrl": "https://example.com/icons/technomir.png",
+            "industry": "Информационные технологии",
+            "siteUrl": "https://technomir.ru"
+        },
+        "region": "Москва",
+        "post": "Системный администратор",
+        "salary": "120 000 - 180 000 ₽",
+        "tags": [
+            "Linux",
+            "Windows",
+            "Сети",
+            "Администрирование"
+        ],
+        "isFavorite": true,
+        "responsibilities": {
+            "title": "Основные обязанности",
+            "description": [
+                "Администрирование серверов Linux и Windows.",
+                "Настройка сетевой инфраструктуры.",
+                "Обеспечение безопасности систем."
+            ]
+        },
+        "requirements": {
+            "title": "Требования",
+            "description": [
+                "Опыт администрирования от 3 лет.",
+                "Знание Linux и Windows.",
+                "Понимание сетевых протоколов."
+            ]
+        }
+    },
+    {
+        "id": "vac45",
+        "company": {
+            "id": "comp45",
+            "name": "ФинТехПрогресс",
+            "iconUrl": "https://example.com/icons/fintechprogress.png",
+            "industry": "Финансы",
+            "siteUrl": "https://fintechprogress.ru"
+        },
+        "region": "Санкт-Петербург",
+        "post": "Аналитик данных",
+        "salary": "140 000 - 200 000 ₽",
+        "tags": [
+            "Python",
+            "SQL",
+            "FinTech",
+            "BI"
+        ],
+        "isFavorite": false,
+        "responsibilities": {
+            "title": "Основные обязанности",
+            "description": [
+                "Анализ финансовых данных.",
+                "Создание отчетов в BI-инструментах.",
+                "Автоматизация аналитики с Python."
+            ]
+        },
+        "requirements": {
+            "title": "Требования",
+            "description": [
+                "Опыт работы с Python и SQL от 3 лет.",
+                "Знание BI-инструментов (Power BI).",
+                "Понимание финансовых процессов."
+            ]
+        }
+    },
+    {
+        "id": "vac46",
+        "company": {
+            "id": "comp46",
+            "name": "ИгроПульс",
+            "iconUrl": "https://example.com/icons/igropulse.png",
+            "industry": "Игровая индустрия",
+            "siteUrl": "https://igropulse.ru"
+        },
+        "region": "Москва",
+        "post": "Разработчик Unreal Engine",
+        "salary": "150 000 - 220 000 ₽",
+        "tags": [
+            "Unreal Engine",
+            "C++",
+            "Игровой дизайн",
+            "3D"
+        ],
+        "isFavorite": true,
+        "responsibilities": {
+            "title": "Основные обязанности",
+            "description": [
+                "Разработка игр на Unreal Engine.",
+                "Работа с C++ для игровых механик.",
+                "Оптимизация производительности."
+            ]
+        },
+        "requirements": {
+            "title": "Требования",
+            "description": [
+                "Опыт работы с Unreal Engine от 3 лет.",
+                "Знание C++.",
+                "Понимание игровых 3D-пайплайнов."
+            ]
+        }
+    },
+    {
+        "id": "vac47",
+        "company": {
+            "id": "comp47",
+            "name": "КиберПрогресс",
+            "iconUrl": "https://example.com/icons/cyberprogress.png",
+            "industry": "Кибербезопасность",
+            "siteUrl": "https://cyberprogress.ru"
+        },
+        "region": "Екатеринбург",
+        "post": "Специалист по ИБ",
+        "salary": "140 000 - 200 000 ₽",
+        "tags": [
+            "Кибербезопасность",
+            "SIEM",
+            "Python",
+            "Аналитика"
+        ],
+        "isFavorite": false,
+        "responsibilities": {
+            "title": "Основные обязанности",
+            "description": [
+                "Мониторинг инцидентов безопасности.",
+                "Работа с SIEM-системами.",
+                "Автоматизация анализа с Python."
+            ]
+        },
+        "requirements": {
+            "title": "Требования",
+            "description": [
+                "Опыт работы в ИБ от 3 лет.",
+                "Знание SIEM и Python.",
+                "Понимание процессов кибербезопасности."
+            ]
+        }
+    },
+    {
+        "id": "vac48",
+        "company": {
+            "id": "comp48",
+            "name": "МобайлТренд",
+            "iconUrl": "https://example parche.com/icons/mobiletrend.png",
+            "industry": "Мобильная разработка",
+            "siteUrl": "https://mobiletrend.ru"
+        },
+        "region": "Санкт-Петербург",
+        "post": "Android-разработчик",
+        "salary": "140 000 - 200 000 ₽",
+        "tags": [
+            "Kotlin",
+            "Android",
+            "MVVM",
+            "REST API"
+        ],
+        "isFavorite": true,
+        "responsibilities": {
+            "title": "Основные обязанности",
+            "description": [
+                "Разработка приложений на Kotlin.",
+                "Интеграция с REST API.",
+                "Оптимизация производительности приложений."
+            ]
+        },
+        "requirements": {
+            "title": "Требования",
+            "description": [
+                "Опыт разработки под Android от 3 лет.",
+                "Знание Kotlin и MVVM.",
+                "Опыт работы с REST API."
+            ]
+        }
+    },
+    {
+        "id": "vac49",
+        "company": {
+            "id": "comp49",
+            "name": "МедиаЛид",
+            "iconUrl": "https://example.com/icons/medialid.png",
+            "industry": "Медиа",
+            "siteUrl": "https://medialid.ru"
+        },
+        "region": "Москва",
+        "post": "Редактор контента",
+        "salary": "90 000 - 130 000 ₽",
+        "tags": [
+            "Контент",
+            "Копирайтинг",
+            "SMM",
+            "Медиа"
+        ],
+        "isFavorite": false,
+        "responsibilities": {
+            "title": "Основные обязанности",
+            "description": [
+                "Редактирование текстов для медиа.",
+                "Координация контент-команды.",
+                "Планирование публикаций."
+            ]
+        },
+        "requirements": {
+            "title": "Требования",
+            "description": [
+                "Опыт работы редактором от 2 лет.",
+                "Навыки копирайтинга.",
+                "Понимание SMM-стратегий."
+            ]
+        }
+    },
+    {
+        "id": "vac50",
+        "company": {
+            "id": "comp50",
+            "name": "ТехноПрогресс",
+            "iconUrl": "https://example.com/icons/technoprogress.png",
+            "industry": "Информационные технологии",
+            "siteUrl": "https://technoprogress.ru"
+        },
+        "region": "Новосибирск",
+        "post": "Системный аналитик",
+        "salary": "130 000 - 190 000 ₽",
+        "tags": [
+            "Аналитика",
+            "BPMN",
+            "UML",
+            "Agile"
+        ],
+        "isFavorite": true,
+        "responsibilities": {
+            "title": "Основные обязанности",
+            "description": [
+                "Сбор и анализ требований к ПО.",
+                "Разработка технической документации.",
+                "Участие в Agile-процессах."
+            ]
+        },
+        "requirements": {
+            "title": "Требования",
+            "description": [
+                "Опыт работы системным аналитиком от 3 лет.",
+                "Знание BPMN и UML.",
+                "Понимание Agile-методологий."
+            ]
+        }
+    }
+]
